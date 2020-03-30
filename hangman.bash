@@ -35,8 +35,6 @@ function find_and_replace(){
 	if [ $good_letters -eq ${#word} ]
 	then
 		((winner=1))
-		echo "jestem tutaj"
-		echo "$winner"
 		((game_is_running=false))
 	fi
 
@@ -154,7 +152,6 @@ function game_win(){
 
 # glowna petla
 function run(){
-	max_shoots=6
 	wrong_shoots=0
 
 	while [ $game_is_running == true ]
