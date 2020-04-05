@@ -155,7 +155,6 @@ function game_win(){
 
 # glowna petla
 function run(){
-	wrong_shoots=0
 
 	while [ $game_is_running == true ]
 	do
