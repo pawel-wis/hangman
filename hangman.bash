@@ -14,7 +14,8 @@ winner=false
 good_letters=0
 # tworzenie zamaskowanego slowa
 game_word=()
-for((i=0; i<${#word}; i++)); do
+for((i=0; i<${#word}; i++))
+do
 	game_word[$i]="_"
 done
 
@@ -22,9 +23,11 @@ done
 function find_and_replace(){
 	letter=$1
 	founded=false
-	for ((i=0; i<${#word}; i++)); do
+	for ((i=0; i<${#word}; i++))
+	do
 		char=${word:$i:1}
-		if [ $char == $letter ]; then
+		if [ $char == $letter ]
+		then
 			game_word[$i]=$letter
 			((founded=true))
 			((good_letters=good_letters+1))
